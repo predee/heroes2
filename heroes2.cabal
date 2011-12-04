@@ -1,0 +1,16 @@
+Name:        heroes2
+Version:     0.0
+
+Synopsis:    Attempt to re-implement "The Heroes of Might and Magic II" by 3DO
+Description:
+  Attempt to re-implement "The Heroes of Might and Magic II" by 3DO.
+Author:      Alexander Poluektov
+Maintainer:  alexander.poluektov@gmail.com
+License:     MIT
+
+Cabal-Version: >= 1.2
+
+executable domino
+  Main-Is:        Main.hs
+  Hs-Source-Dirs: src
+  Build-Depends:  base >= 2.0
