@@ -7,6 +7,8 @@ module Heroes2.Hero where
 
 import Data.Array
 
+import Heroes2.Race
+
 -- placeholders
 data Monster = Monster
 data Skill = Skill
@@ -14,7 +16,6 @@ data Artefact = Artefact
 data Event = Event
 data Player = Player
 data Coords = Coords
-data Race = Race
 
 data Hero = Hero { identity       :: HeroId
                  , player         :: Maybe Player
