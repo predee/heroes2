@@ -34,6 +34,9 @@ data Hero = Hero { identity       :: HeroId
                  , formation      :: Formation
                  }
 
+instance Eq Hero where
+    h1 == h2 = name (identity h1) == name (identity h2)
+
 data HeroId = HeroId { name   :: String
                      , race   :: Race
                      , gender :: Gender 

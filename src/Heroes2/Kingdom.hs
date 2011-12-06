@@ -21,3 +21,12 @@ data Kingdom = Kingdom { player        :: Player
                        , lighthouses   :: [Lighthouse]
                        , heroesForHire :: [Hero]
                        }
+
+-- TODO: just proof of concept, interface should be better
+
+type HeroZipper = (Hero, Kingdom)
+
+toHero :: Kingdom -> Hero -> HeroZipper
+toHero k h = (h, rest)
+    where rest = k { heroes = restHeroes }
+          restHeroes = filter (/= h) (heroes k)
