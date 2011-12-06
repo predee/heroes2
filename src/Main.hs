@@ -6,5 +6,6 @@
 module Main where
 
 import Heroes2.Hero
+import Heroes2.Kingdom
 
 main = putStrLn "Hello, Heroes II World!"
